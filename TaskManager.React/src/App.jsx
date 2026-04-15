@@ -5,7 +5,6 @@ import FilterTabs from './components/FilterTabs'
 import './App.css'
 
 const API_BASE = 'https://localhost:44317/api/Tasks'
-
 const PAGE_SIZE = 5
 
 function App() {
@@ -99,6 +98,25 @@ function App() {
     }
   }
 
+  const handleEdit = async (id, title, description) => {
+    const task = tasks.find(t => t.id === id)
+    try {
+      const res = await fetch(`${API_BASE}/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          title,
+          description,
+          isCompleted: task.isCompleted
+        })
+      })
+      if (!res.ok) throw new Error()
+      fetchTasks(page, filter)
+    } catch {
+      setError('Düzenleme hatası')
+    }
+  }
+
   return (
     <div className="container">
       <h1>Görev Yöneticisi</h1>
@@ -109,13 +127,31 @@ function App() {
       {error && <div className="error-box">{error}</div>}
 
       {loading ? (
-        <p>Yükleniyor...</p>
+        <div className="skeleton-list">
+          {[...Array(3)].map((_, i) => (
+            <div key={i} className="skeleton-item" />
+          ))}
+        </div>
       ) : (
-        <TaskList
-          tasks={tasks}
-          onToggle={handleToggle}
-          onDelete={handleDelete}
-        />
+        <>
+          <TaskList
+            tasks={tasks}
+            onToggle={handleToggle}
+            onDelete={handleDelete}
+            onEdit={handleEdit}
+          />
+          {totalPages > 1 && (
+            <div className="pagination">
+              <button onClick={() => setPage(p => p - 1)} disabled={page === 1}>
+                Önceki
+              </button>
+              <span>{page} / {totalPages}</span>
+              <button onClick={() => setPage(p => p + 1)} disabled={page === totalPages}>
+                Sonraki
+              </button>
+            </div>
+          )}
+        </>
       )}
     </div>
   )
