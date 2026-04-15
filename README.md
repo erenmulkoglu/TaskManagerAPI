@@ -8,7 +8,7 @@ Uygulama Docker ile container ortamında çalışacak şekilde yapılandırılm�
 
 <img width="1912" height="972" alt="image" src="https://github.com/user-attachments/assets/9b0d2746-f778-4b0b-a76e-70e095e7686e" />
 
-<img width="1918" height="1013" alt="image" src="https://github.com/user-attachments/assets/2f1950c8-a227-4252-9058-a87d19035209" />
+<img width="1917" height="960" alt="image" src="https://github.com/user-attachments/assets/b36fa39e-cd77-4198-9587-91a322c3309f" />
 
 <img width="1587" height="900" alt="image" src="https://github.com/user-attachments/assets/f959bdbe-6ad6-4816-a3f5-bde83a50bbe2" />
 
