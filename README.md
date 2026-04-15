@@ -6,7 +6,8 @@ Backend tarafı ASP.NET Core Web API, frontend tarafı React ve veritabanı olar
 Uygulama Docker ile container ortamında çalışacak şekilde yapılandırılmıştır.
 
 
-<img width="1916" height="1017" alt="image" src="https://github.com/user-attachments/assets/0e0da3e2-5941-4c2b-b945-2027f8bf4ebf" />
+<img width="1912" height="972" alt="image" src="https://github.com/user-attachments/assets/9b0d2746-f778-4b0b-a76e-70e095e7686e" />
+
 
 <img width="1918" height="1013" alt="image" src="https://github.com/user-attachments/assets/2f1950c8-a227-4252-9058-a87d19035209" />
 
