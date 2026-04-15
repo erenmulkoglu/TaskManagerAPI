@@ -4,11 +4,7 @@ import TaskForm from './components/TaskForm'
 import FilterTabs from './components/FilterTabs'
 import './App.css'
 
-// LOCAL için:
 const API_BASE = 'https://localhost:44317/api/Tasks'
-
-// Docker için:
-// const API_BASE = 'http://localhost:3001/api/Tasks'
 
 const PAGE_SIZE = 5
 
