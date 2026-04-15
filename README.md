@@ -38,9 +38,15 @@ Proje iki farklı şekilde çalıştırılabilir:
 
 - SQL Server (LocalDB veya MSSQL)
 
+**1. Migration (ilk kurulumda)**
 ```bash
 cd TaskManagerAPI
-dotnet run
+dotnet ef database update
+```
+
+**2. Uygulamayı başlat**
+```bash
+f5 or dotnet run
 ```
 
 API: https://localhost:44317
@@ -89,12 +95,6 @@ docker-compose up --build
 ### 1. Veritabanını başlat
 ```bash
 docker-compose up -d
-```
-
-### 3. Migration (ilk kurulumda)
-```bash
-cd TaskManagerAPI
-dotnet ef database update
 ```
 
 
