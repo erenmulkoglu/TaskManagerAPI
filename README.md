@@ -138,7 +138,7 @@ dotnet test
 - Frontend: React ve Vite. Sürdürülebilir, bileşen tabanlı bir kullanıcı arayüzü inşa etmek için React'i; hızlı derleme süreleri ve modern geliştirici deneyimi sunması sebebiyle de Vite'i seçtim.
 - DevOps: Docker ve Docker Compose. Projeyi inceleyecek kişilerin "benim bilgisayarımda çalışmıyor" gibi sorunlar yaşamadan, tek tuşla tüm sistemi bağımlılıklarıyla beraber ayağa kaldırabilmesi için konteyner mimarisi kurguladım.
 
-## Öne Çıkan Geliştirme Kararları
+## Öne Çıkan Geliştirme Fikirleri
 
 Projede istenen temel CRUD işlemlerinin yanı sıra, kodun kalitesini ve sürdürülebilirliğini artırmak için aşağıdaki yapıları uyguladım:
 
