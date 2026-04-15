@@ -109,18 +109,8 @@ docker-compose up -d
 | PUT | /api/tasks/{id} | Görevi güncelle |
 | DELETE | /api/tasks/{id} | Görevi sil |
 
-## Mimari Kararlar
-
-- **Servis katmanı**: Controller'lar sadece HTTP'yi yönetir; iş mantığı `TaskService`'te.
-- **Dependency Injection**: `ITaskService` interface'i üzerinden inject edilir — test edilebilirlik ve loose coupling için.
-- **DbContext lifetime**: `Scoped` — her HTTP isteğinde yeni instance, captive dependency sorununu önler.
-- **Middleware sırası**: GlobalExceptionHandler → RequestLogging → Controller. Exception handler en dışta olmalı ki tüm hataları yakalasın.
-- **DTO kullanımı**: Domain modeli API'ye doğrudan açılmadı; model değişiklikleri API kontratını etkilemez.
-
-
 Konfigürasyon
 Connection String (Docker)
-
 
 ## Testler
 
@@ -138,7 +128,7 @@ dotnet test
 - Frontend: React ve Vite. Sürdürülebilir, bileşen tabanlı bir kullanıcı arayüzü inşa etmek için React'i; hızlı derleme süreleri ve modern geliştirici deneyimi sunması sebebiyle de Vite'i seçtim.
 - DevOps: Docker ve Docker Compose. Projeyi inceleyecek kişilerin "benim bilgisayarımda çalışmıyor" gibi sorunlar yaşamadan, tek tuşla tüm sistemi bağımlılıklarıyla beraber ayağa kaldırabilmesi için konteyner mimarisi kurguladım.
 
-## Öne Çıkan Geliştirme Fikirleri
+## Öne Çıkan Geliştirme Kararları
 
 Projede istenen temel CRUD işlemlerinin yanı sıra, kodun kalitesini ve sürdürülebilirliğini artırmak için aşağıdaki yapıları uyguladım:
 
