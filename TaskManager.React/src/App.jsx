@@ -4,7 +4,7 @@ import TaskForm from './components/TaskForm'
 import FilterTabs from './components/FilterTabs'
 import './App.css'
 
-const API_BASE = import.meta.env.VITE_API_BASE
+const API_BASE = import.meta.env.VITE_API_BASE || '/api/Tasks'
   
 const PAGE_SIZE = 5
 
