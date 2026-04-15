@@ -9,11 +9,6 @@ services:
       - "1433:1433"
     volumes:
       - mssql_data:/var/opt/mssql
-    healthcheck:
-      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "TaskManager_2024!", "-Q", "SELECT 1"]
-      interval: 10s
-      timeout: 5s
-      retries: 10
 
   backend:
     build:
@@ -26,8 +21,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__DefaultConnection=Server=mssql,1433;Database=TaskManagerDb;User Id=sa;Password=TaskManager_2024!;TrustServerCertificate=True;
     depends_on:
-      mssql:
-        condition: service_healthy
+      - mssql
 
   frontend:
     build:
