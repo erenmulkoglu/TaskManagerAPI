@@ -66,6 +66,8 @@ Frontend: http://localhost:5173
 
 ### 2. Docker ile Çalıştırma (Production-like)
 
+http://localhost:8080/swagger/index.html
+
 Bu yöntem tüm sistemi container içinde ayağa kaldırır.
 
 Gereksinimler
