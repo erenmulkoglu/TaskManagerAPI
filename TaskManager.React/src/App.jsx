@@ -4,7 +4,7 @@ import TaskForm from './components/TaskForm'
 import FilterTabs from './components/FilterTabs'
 import './App.css'
 
-const API_BASE = 'https://localhost:44317/api/Tasks'
+const API_BASE = 'http://localhost:3001/api/Tasks'
 
 function App() {
   const [tasks, setTasks] = useState([])
