@@ -21,7 +21,7 @@ services:
       dockerfile: Dockerfile
     container_name: taskmanager-backend
     ports:
-      - "8080:8080"
+      - "3000:44317"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__DefaultConnection=Server=mssql,1433;Database=TaskManagerDb;User Id=sa;Password=TaskManager_2024!;TrustServerCertificate=True;
