@@ -12,7 +12,7 @@ Uygulama Docker ile container ortamında çalışacak şekilde yapılandırılm�
 
 <img width="1587" height="900" alt="image" src="https://github.com/user-attachments/assets/f959bdbe-6ad6-4816-a3f5-bde83a50bbe2" />
 
-<img width="1586" height="900" alt="image" src="https://github.com/user-attachments/assets/b4c2fd45-1dc9-4374-82f8-19c8add3515d" />
+<img width="1585" height="897" alt="image" src="https://github.com/user-attachments/assets/915a04f7-c6e9-426b-aa84-29b9c89128d7" />
 
 
 ## Teknoloji Tercihleri
@@ -68,7 +68,8 @@ Frontend: http://localhost:5173
 
 ### 2. Docker ile Çalıştırma (Production-like)
 
-http://localhost:8080/swagger/index.html
+Backend: http://localhost:3001/swagger/index.html
+Frontend: http://localhost:3000/
 
 Bu yöntem tüm sistemi container içinde ayağa kaldırır.
 
