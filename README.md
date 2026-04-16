@@ -69,6 +69,7 @@ Frontend: http://localhost:5173
 ### 2. Docker ile Çalıştırma (Production-like)
 
 Backend: http://localhost:3001/swagger/index.html
+
 Frontend: http://localhost:3000/
 
 Bu yöntem tüm sistemi container içinde ayağa kaldırır.
